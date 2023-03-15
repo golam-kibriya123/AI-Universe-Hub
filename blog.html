@@ -5,11 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <!-- tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>blog site</title>
+
 </head>
 
-<body>
+<body class=" w-full max-w-[1180px] mx-auto">
+    <header class="mb-10  top-0">
+        <nav class="flex justify-between py-2 px-10 items-center bg-green-100 mx-auto rounded-lg ">
+            <div class="nav-title">
 
+                <h1 class="text-2xl font-bold text-purple-500">Interactive <span class="text-green-500">Blogs</span>
+                </h1>
+
+            </div>
+            <div class="nav-btn">
+                <button class="bg-green-500 py-1 px-3 text-white font-bold rounded-md" id="home-btn"><a
+                        href="/index.html">Home</a></button>
+            </div>
+        </nav>
+    </header>
+    <main class="border border-green-500 p-3 m-3 ">
+        <section id="questions " class="bg-gray-100 p-2 ">
+            <div class="question">
+                <h1 class="text-2xl text-green-500 font-semibold">1# <span class="text-red-400 font-normal">.forEach(),
+                        .map(), .filter() .find() What's the difference?</span></h1>
+                <div class="shadow-lg w-11/12 my-5 p-2">
+                    <div class="overflow-x-auto ">
+                        <table class="table w-full">
+
+                            <tbody>
+                                <tr>
+                                    <th>Methods</th>
+                                    <th>Different</th>
+                                </tr>
+                                <!-- row 1 -->
+                                <tr>
+                                    <td>forEach()</td>
+                                    <td>forEach(), is used to execute the same code on every element in an array but
+                                        does not change the array and it returns undefined.</td>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                    <td>map()</td>
+                                    <td>map() executes the same code on every element in an array and returns a new
+                                        array with the updated elements.</td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <td>filter()</td>
+                                    <td>filter() checks every element in an array to see if it meets a certain criteria
+                                        and returns a new array with the elements that return truthy for the criteria.
+                                    </td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <td>find()</td>
+                                    <td>find() method returns the first element of an array if it the element meets a
+                                        certain criteria. Or returned undefined .</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+
+        </section>
+    </main>
 </body>
 
 </html>
