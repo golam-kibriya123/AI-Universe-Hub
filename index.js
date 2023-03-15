@@ -114,7 +114,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
+  console.log(storage)
   if (storage) {
     localStorage.setItem(
       "results",
@@ -152,9 +153,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     </h1>
     <p class="text-sm flex justify-center items-center gap-2">
       Total Time: <span class="text-xl text-orange-500">${timeTaken.innerText.replace(
-      "sec",
-      ""
-    )}<span class="text-xs">sec</span></span>
+      "sec", "")}<span class="text-xs">sec</span></span>
     </p>
   </div>
   
